@@ -1,0 +1,41 @@
+
+package labprog3;
+
+public class Aluno {
+    private String nome;
+    private String matricula;
+    
+    public Aluno(){
+        this(null);
+    }
+
+    public Aluno(String matricula) {
+        this.matricula = matricula;
+    }
+
+    public Aluno(String matricula, String nome) {
+        this.matricula = matricula;
+        this.nome = nome;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+    
+    @Override
+    public String toString(){
+        return matricula+": "+nome;
+    }
+}
